@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*header*/
+header{
+    background: #2b2d42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+/*logo*/
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  /*to make it circular*/      
+    overflow: hidden;
+    border: 2px solid #edf2f4;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /*image fills the circle*/
+}
+
+/*navigation*/
+header nav a{
+    color: #edf2f4;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: #8d99ae;    /*change color on hover*/
+}
+
+/*sections*/
+section{
+    text-align: center;
+    padding: 80px 20px;
+    background: #edf2f4;
+}
+
+.featured{
+    background: #edf2f4;
+    padding: 60px 10%;
+}
+
+/*introduction layout container*/
+.intro-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+/*left side introduction*/
+.intro-left{
+    width: 60%;
+}
+
+/*big hello text*/
+.hello{
+    font-size: 110px;
+    color: #2b2d42;
+    margin-bottom: 15px;
+}
+
+/*name text*/
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    color: #8d99ae;
+}
+
+/*role text*/
+.role{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #2b2d42;
+}
+
+/*right side introduction*/
+.intro-right p{
+    font-size: 16px;       
+    line-height: 1.4;      
+    color: #2b2d42;        
+    max-width: 600px;      
+    text-align: center;    
+    margin: 0 auto 20px;   
+}
+
+/*featured image*/
+.featured-circle{
+    width: 250px;          
+    height: 250px;         
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #8d99ae;
+    margin-bottom: 30px;  
+    margin-left: 155px;
+}
+
+.featured-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*projects section*/
+#projects h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2b2d42;
+    letter-spacing: 1px;
+}
+
+.projects-icons{
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;          
+    gap: 40px;                
+    margin-top: 30px;
+}
+
+/*each project item*/
+.project-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*project images*/
+.projects-icons img{
+    width: 530px;
+    height: 270px;
+    object-fit: cover;
+    border: 3px solid #8d99ae;
+    transition: transform 0.3s;  
+}
+
+/*hover when cursor on projects*/
+.projects-icons img:hover{
+    transform: scale(1.1);     
+}
+/*project description*/
+.project-desc{
+    margin-top: 16px;
+    font-size: 16px;
+    color: #2b3842;
+    text-align: center;
+    max-width: 530px; 
+}
+
+/*skills section*/
+.skills-icons{
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;          
+    gap: 100px;                
+    margin-top: 20px;
+}
+
+.skills-icons img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;  
+}
+
+/*hover when cursor on the images of skills*/
+.skills-icons img:hover{
+    transform: scale(1.5);      
+}
+
+/*skills section*/
+#skills{
+    text-align: center;
+    padding: 50px 20px;
+    background: #edf2f4;
+    font-family: 'Arial', sans-serif;
+}
+
+#skills h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2b2d42;
+    letter-spacing: 1px;
+}
+
+/*skills description text*/
+.skills-desc{
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #2b4232;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*footer*/
+footer{
+    background: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    padding: 30px;
+}
+
+/*logo in the footer*/
+.footer-logo{
+    width: 60px;          
+    height: 60px;
+    border-radius: 50%;   
+    overflow: hidden;     
+    border: 2px solid #edf2f4;
+    margin: 0 auto 15px;  
+}
+
+.footer-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+/*back to the top button*/
+footer .back-to-top{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #8d99ae;
+    color: #edf2f4;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/*hover on the button of back to top*/
+footer .back-to-top:hover{
+    background-color: #73769a;
+    transform: scale(1.05);
+}
+
+
